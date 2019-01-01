@@ -1,0 +1,55 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway";
+}
+
+.w3-bar,h1,button {
+    font-family: "Raleway";
+}
+
+.fa-anchor,.fa-coffee, .fa-parachute-box {
+    font-size: 200px
+}
+
+.material-icons {
+    font-size: 200px
+}
+s
+.bigimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("cosmos.jpg");
+    min-height: 90%;
+    background-attachment: fixed;
+}
+
+.bigimg_coming_soon {
+    background-repeat: no-repeat;
+    background-image: url("alone.jpg");
+    min-height: 90%;
+    max-height: 100%;
+    background-size: cover;
+}
+
+.bigimg_coming_soon_ml {
+    background-repeat: no-repeat;
+    background-image: url("citylights.jpg");
+    min-height: 0%;
+    max-height: 100%;
+    background-size: cover;
+}
+/* https://images.pexels.com/photos/327064/pexels-photo-327064.jpeg */
+.bigimg_coming_soon_games {
+    background-repeat: no-repeat;
+    background-image: url("joystick.jpg");
+    min-height: 0%;
+    max-height: 100%;
+    background-size: cover;
+}
+
+/* https://images.pexels.com/photos/157039/pexels-photo-157039.jpeg */
+/* 'https://cdn.pixabay.com/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg' */
+
+/* https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg */
+
+/* https://images.pexels.com/photos/48799/drill-milling-milling-machine-drilling-48799.jpeg */
+/* https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg */

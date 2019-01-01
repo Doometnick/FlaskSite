@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dominique Brandl Homepage</title>
+    <meta author="Dominique Brandl"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+    <!-- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="/static/msain.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <script src="main.js"></script>
+</head>
+
+<body>s
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-dark-grey w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="/home" class="myclass w3-bar-item w3-button w3-padding-large w3-medium w3-hover-dark-grey w3-wide">Home</a>
+            <a href="/ml" class="w3-bar-item w3-button w3-padding-large w3-medium w3-hover-dark-grey w3-wide">Machine Learning</a>
+            <a href="/games" class="w3-bar-item w3-button w3-padding-large w3-medium w3-hover-dark-grey w3-wide">Games</a>
+            <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-medium w3-hover-dark-grey w3-wide">About</a>
+        </div>
+    </div>
+    
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="/home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="/ml" class="w3-bar-item w3-button w3-padding-large">Machine Learning</a>
+        <a href="/games" class="w3-bar-item w3-button w3-padding-large">Games</a>
+        <a href="/about" class="w3-bar-item w3-button w3-padding-large">About</a>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+    
+    <footer class="w3-container w3-blue-grey w3-padding-32 w3-center">
+        <div class="w3-xlarge w3-padding-32">
+            <i href="#" class="fa fa-facebook w3-hover-opacity"></i>
+            <a href="https://www.instagram.com/dominique_bra/" target=_blank><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <i href="#" class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p><a class="w3-hover-opacity" href="#">Contact</a></p>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
