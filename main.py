@@ -21,6 +21,10 @@ def ml():
 def games():
     return render_template("games.html")
 
+@app.route("/misc")
+def misc():
+    return render_template("misc.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
