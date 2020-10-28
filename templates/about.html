@@ -25,5 +25,51 @@
     </p>
 </section>
 
+<section class="w3-container w3-center w3-content" style="padding:0px 16px; max-width:600px">
+    <h2 class="w3-wide">Testing JavaScript</h2>
+    <p class="w3-large" style="text-align: left">
+        <!-- <button onClick="moveSquareOnClick()">Start Animation</button>
+        <button onClick="moveSquareOnClick()">Stop Animation</button> -->
+        <button id="myButton">Click me</button>
+    <div id="container">
+        <div id="animate"></div>
+    </div>    
+    </p>
+</section>
+
+
+
+<script>
+    document.getElementById("myButton").addEventListener("click", moveSquareOnClick);
+    document.getElementById("animate").addEventListener("click", myfn);
+
+    let direction = 1;
+
+    function moveSquareOnClick(){
+        let elem = document.getElementById("animate");
+        let pos = 0;
+        let id = setInterval(frame, 5);
+        // let direction = 1;
+        function frame(){
+            if (direction > 0 && pos >= 350){
+                // clearInterval(id);
+                direction *= -1;
+            }
+            else if (direction <= 0 && pos == 0){
+                direction *= -1;
+            }
+            else{
+                pos = pos + direction;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+
+    function myfn(){
+        direction *= -1;
+    }
+</script>
+
 
 {% endblock %}
